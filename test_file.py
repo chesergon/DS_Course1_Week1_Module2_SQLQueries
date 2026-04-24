@@ -2,7 +2,7 @@
 
 # Run this cell without changes
 
-import pandas as pd
+import pandas as pd 
 import sqlite3
 
 # Create the connection
