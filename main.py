@@ -44,7 +44,7 @@ df_mass
 df_mass_moon =  pd.read_sql (""" 
 SELECT *
 FROM planets
- WHERE num_of_moons >= 1 AND mass <= 1.00;
+ WHERE num_of_moons > 1 AND mass < 1.00;
 """,conn1)
 df_mass_moon
 
@@ -99,7 +99,7 @@ FROM (SELECT name,age,breed
       FROM dogs
       ORDER BY age DESC
       LIMIT 4)
-ORDER BY breed ASC ,name ASC
+ORDER BY breed ASC ,age ASC
 """,conn2)
 df_4_oldest
 
